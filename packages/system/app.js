@@ -18,7 +18,11 @@ System.register(function(app, auth, database) {
   //We enable routing. By default the Package Object is passed to the routes
   System.routes(app, auth, database);
 
-  System.aggregateAsset('css', 'common.css');
+  //System.aggregateAsset('css', 'common.css');
+  System.aggregateAsset('css', 'bootstrap.min.css');
+  System.aggregateAsset('css', 'bootstrap-responsive.min.css');
+  System.aggregateAsset('css', 'style.css');
+
 
   // The middleware in config/express will run before this code
 
